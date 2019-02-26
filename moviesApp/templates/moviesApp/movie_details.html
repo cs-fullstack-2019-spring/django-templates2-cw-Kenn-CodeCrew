@@ -1,0 +1,11 @@
+{% extends 'moviesApp/movies.html' %}
+
+{% block subtitle %}
+    {{ theMovie.movie_title }}
+{% endblock %}}
+
+{% block content %}
+    {{ theMovie.movie_details}}
+    <br>
+    <a href="{% url 'index' %}">Home Page</a>
+{% endblock content %}
